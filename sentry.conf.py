@@ -20,9 +20,9 @@ DATABASES = {
 
         #'NAME': os.path.join(CONF_ROOT, 'sentry.db'),
         'NAME': 'sentry',
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': '',
+        'USER': 'sentry',
+        'PASSWORD': 'tQI1hzZ*U1',
+        'HOST': 'localhost',
         'PORT': '',
 
         # If you're using Postgres, we recommend turning on autocommit

@@ -20,14 +20,14 @@ env.shell = '/bin/bash -c'
 
 @task
 def setup():
-    # require.deb.packages([
-    #     'python',
-    #     'mercurial',
-    #     'subversion',
-    #     'git',
-    #     'vim',
-    #     'sudo'
-    #     ], update=True)
+    require.deb.packages([
+        'python',
+        'mercurial',
+        'subversion',
+        'git',
+        'vim',
+        'sudo'
+        ], update=True)
 
     clone_repo()
 

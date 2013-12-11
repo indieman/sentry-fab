@@ -7,6 +7,8 @@ import os.path
 
 CONF_ROOT = os.path.dirname(__file__)
 
+ALLOWED_HOSTS = ['*']
+
 DATABASES = {
     'default': {
         # You can swap out the engine for MySQL easily by changing this value
@@ -89,7 +91,7 @@ DATABASES = {
 ################
 
 # You MUST configure the absolute URI root for Sentry:
-SENTRY_URL_PREFIX = 'http://sentry.example.com'  # No trailing slash!
+# SENTRY_URL_PREFIX = 'http://sentry.lookido'  # No trailing slash!
 
 # If you're using a reverse proxy, you should enable the X-Forwarded-Proto
 # header, and uncomment the following setting

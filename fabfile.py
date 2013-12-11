@@ -2,6 +2,7 @@ __author__ = 'indieman'
 
 import sys, os, fabtools
 from fabric.api import *
+from fabric.contrib import files
 from fabtools import require
 from fabtools.python import virtualenv, install_pip
 from fabtools.files import watch
@@ -27,7 +28,7 @@ env.repository_url = 'https://github.com/indieman/sentry-fab.git'
 
 @task
 def host(host_name):
-  env.host = [host_name]
+  env.hosts = [host_name]
 
 
 @task
@@ -102,7 +103,7 @@ def create_project_user(pub_key_file, username=None):
     username = username or env.project_user
 
     with (settings(warn_only=True)):
-        sudo('adduser %s --disгдabled-password --gecos ""' % username)
+        sudo('adduser %s --disabled-password --gecos ""' % username)
         # sudo('adduser %s --gecos ""' % username)
     home_dir = get_home_dir(username)
     with cd(home_dir):

@@ -1,3 +1,4 @@
 -e git+https://github.com/ronnix/fabtools.git@cad9bf6bc4409768a57d76eb12a64ca7a9335b3f#egg=fabtools-dev
 psycopg2==2.5.1
 -e git+https://github.com/indieman/sentry.git#egg=sentry
+jinja2
